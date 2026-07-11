@@ -180,3 +180,107 @@ img {
   color: #575757;
   font-size: 14px;
 }
+
+/* Pricing Section */
+
+.pricing {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.pricing-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  color: #0d1b2a;
+}
+
+.pricing-subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #575757;
+  margin: 15px 0 60px;
+}
+
+.pricing_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .plan {
+  color: #888888;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.card h2 {
+  font-size: 44px;
+  margin: 8px 0;
+  color: #0d1b2a;
+}
+
+.card small {
+  color: #888888;
+}
+
+.card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 20px 0;
+}
+
+.card ul li {
+  margin: 10px 0;
+  color: #333333;
+  position: relative;
+  padding-left: 16px;
+}
+
+.card ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+}
+
+.card button {
+  margin-top: 20px;
+  padding: 14px;
+  border: 1px solid #2563eb;
+  background: #fff;
+  color: #2563eb;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card.active {
+  background: #0d1b2a;
+  color: #fff;
+}
+
+.card.active h2,
+.card.active small,
+.card.active li,
+.card.active .plan {
+  color: #fff;
+}
+
+.card.active hr {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card.active button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+}
