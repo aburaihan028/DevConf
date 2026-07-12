@@ -284,3 +284,34 @@ img {
   color: #fff;
   border: none;
 }
+
+/* footer */
+.footer {
+  background: #0d1b2a;
+  padding: 56px 0;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 25px;
+}
+
+.footerLinks a {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footerLinks a:hover {
+  color: #ffffff;
+}
+
+.footerFlex {
+  display: flex;
+  justify-content: space-between;
+}
